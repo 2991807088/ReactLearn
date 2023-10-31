@@ -1,0 +1,24 @@
+.layout{
+    height: 100vh;
+    background-color: burlywood;
+    .header{
+        @include row;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding-right: 10vw;
+        height: 10vh;
+        background-color: aliceblue;
+        .item{
+            font-size: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                color: aquamarine;
+                transition: 0.3s;
+            }
+            &:not(:last-child){
+                margin-right: 5vw;
+            }
+        }
+    }
+}
